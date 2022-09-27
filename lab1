@@ -1,0 +1,52 @@
+# План на первый блок
+#1. Организовать кодовую базу (создать git-репозиторий)
+#2. Установить интепретатор Python >=3.8 (https://www.python.org/downloads/)
+#3. Изучить установку внешних пакетов через pip (https://pypi.org/)
+#4. Установить Jupyter Notebooks (https://jupyter.org/) — если используете VS Code с Питон-сервером Pylance (входит в состав официального Python расширения), то Jupyter будет встроен в интерактивную среду
+#5. Изучить основные типы и структуры данных Питона (списки, словари, кортежи, множества)
+#6. Описать предметную область на свой выбор при помощи встроенных типов и структур данных
+
+
+# Типы данных в Python:
+# * строки
+Name = 'Ilnaz'
+Surname = 'Nazarov'
+Groupe = 'ASU6-22m'
+
+print(Name, ' ' *2, Surname + ' Group:', Groupe)
+
+print('')
+
+# * Списки (List)
+list2 = list(Surname)
+print(list2)
+print (sorted(list2))
+
+
+# * Boolean (логический тип данных)
+IamStudent = False
+
+if (IamStudent): print('Я студент')
+else: print('Я не студент')
+
+
+# * Dictionaries (словари)
+education = {'City': 'Perm', 'university': 'PSTU', 'Name': 'Ilnaz', 'Groupe': 'ASU6'}
+print(education)
+
+
+# * Tuples (кортежи)
+a = tuple('hello, world!')
+print(a)
+
+
+# * Sets (множества)
+set1 = {'Ilnaz', 'Nazarov', 21}
+set2 = {'Ilnaz', '123', 'PSTU', 'ASU', 'ITAS'}
+
+print('Разность: ',set1 - set2)
+print('Разность: ',set2 - set1) 
+print('Симметрическая разность: ',set1 ^ set2) 
+print('Пересечение: ', set1 & set2) 
+print('Объединение: ',set1 | set2) 
+
